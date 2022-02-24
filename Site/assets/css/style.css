@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Fredoka One';
+	font-size: 25px;
+	line-height: 1.6;
+	color: #ECECF9;
+}
+
+*,
+*:before,
+*:after {
+		box-sizing: border-box;
+}
+/*container*/
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*intro*/
+.intro {
+	width: 100%;
+	height: 100vh;
+	
+	background: url("../images/Back3.jpg") center
+	no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* header */
+.header {
+	width = 100%;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	
+}
+/*
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+}
+*/
+.header__logo {
+	font-size: 75px;
+	font-family": 'Fredoka One';
+	font-weight: 700;
+	color: #fff;
+}
+
+
+/* Nav */
+
+.nav {
+	font-size: 15px;
+	font-family: 'Colibri';
+	margin: 0;
+}
+
+.nav__link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	position: relative;
+	
+	
+	color: #fff;
+	text-decoration: none;
+	
+	transition: color .1s linear;
+}
+
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	opacity: 0;
+	
+	background-color: #DBC167;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	
+	transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+	color: #DBC167;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
